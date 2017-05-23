@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white;
   font-family: "Lato";
 }
 
@@ -73,10 +73,12 @@ span.navigate:hover {
 }
 
 #portfolio-container {
-  position: absolute;
-  top: 30%;
-  left: 12%;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+#portfolio-container img {
+  border: 15px rgba(0, 0, 0, 0.68) solid;
 }
 
 #landscape-selector {
@@ -84,11 +86,23 @@ span.navigate:hover {
   z-index: -1;
 }
 
+.button-container {
+  position: absolute;
+  top: 250px;
+}
+.button-container#landscapes {
+  left: 180px;
+}
+
+.button-container#portraits {
+  left: 800px;
+}
+
 #landscapes-wrapper {
   position: absolute;
   top: 0px;
   width: 450px;
-  height: 300.73px;
+  height: 310.69px;
 }
 
 #landscapes-wrapper h3 {
@@ -123,7 +137,7 @@ span.navigate:hover {
   top: 0px;
   left: 43%;
   width: 450px;
-  height: 300px;
+  height: 310px;
 }
 
 #portraits-wrapper h3 {

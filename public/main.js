@@ -11,6 +11,7 @@ const landscapesButton = document.getElementById('landscapes-wrapper')
 const portraitsButton = document.getElementById('portraits-wrapper')
 const picturesPortfolio = document.getElementById('show-portfolio')
 const landscapesContainer = document.getElementById('landscapes-container')
+const portraitsContainer = document.getElementById('portraits-container')
 
 function openInNewTab(url) {
   const tab = window.open(url, '_blank')
@@ -20,12 +21,15 @@ function openInNewTab(url) {
 landscapesButton.addEventListener('click', (event) => {
   portfolioContainer.classList.add('hidden')
   picturesPortfolio.classList.remove('hidden')
+  portraitsContainer.classList.add('hidden')
   landscapesContainer.classList.remove('hidden')
 })
 
 portraitsButton.addEventListener('click', (event) => {
   portfolioContainer.classList.add('hidden')
   picturesPortfolio.classList.remove('hidden')
+  landscapesContainer.classList.add('hidden')
+  portraitsContainer.classList.remove('hidden')
 })
 
 //-------------------------Homepage Listeners-----------------------------
