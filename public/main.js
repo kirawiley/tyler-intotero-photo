@@ -7,6 +7,7 @@ const about = document.getElementById('about')
 const contact = document.getElementById('contact')
 const homeContainer = document.getElementById('homepage-container')
 const portfolioContainer = document.getElementById('portfolio-container')
+const aboutContainer = document.getElementById('about-container')
 const landscapesButton = document.getElementById('landscapes-wrapper')
 const portraitsButton = document.getElementById('portraits-wrapper')
 const picturesPortfolio = document.getElementById('show-portfolio')
@@ -44,10 +45,14 @@ portfolio.addEventListener('click', (event) => {
   homeContainer.classList.add('hidden')
   portfolioContainer.classList.remove('hidden')
   picturesPortfolio.classList.add('hidden')
+  aboutContainer.classList.add('hidden')
 })
 
 about.addEventListener('click', (event) => {
   homeContainer.classList.add('hidden')
+  portfolioContainer.classList.add('hidden')
+  picturesPortfolio.classList.add('hidden')
+  aboutContainer.classList.remove('hidden')
 })
 
 contact.addEventListener('click', (event) => {
