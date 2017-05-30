@@ -39,6 +39,7 @@ logo.addEventListener('click', (event) => {
   homeContainer.classList.remove('hidden')
   portfolioContainer.classList.add('hidden')
   picturesPortfolio.classList.add('hidden')
+  aboutContainer.classList.add('hidden')
 })
 
 portfolio.addEventListener('click', (event) => {

@@ -177,3 +177,17 @@ span.navigate:hover {
   margin-bottom: 25px;
   width: 32%;
 }
+
+#tyler-info {
+  margin-top: 150px;
+  margin-left: 100px;
+  color: black;
+  font-size: 20px;
+}
+
+#tyler-photo {
+  margin-top: 150px;
+  margin-left: 100px;
+  width: 400px;
+  border: 15px rgba(0, 0, 0, 0.68) solid;
+}
