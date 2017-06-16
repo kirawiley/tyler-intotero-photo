@@ -19,14 +19,14 @@ function openInNewTab(url) {
   tab.focus()
 }
 
-landscapesButton.addEventListener('click', (event) => {
+landscapesButton.addEventListener('click', () => {
   portfolioContainer.classList.add('hidden')
   picturesPortfolio.classList.remove('hidden')
   portraitsContainer.classList.add('hidden')
   landscapesContainer.classList.remove('hidden')
 })
 
-portraitsButton.addEventListener('click', (event) => {
+portraitsButton.addEventListener('click', () => {
   portfolioContainer.classList.add('hidden')
   picturesPortfolio.classList.remove('hidden')
   landscapesContainer.classList.add('hidden')
@@ -35,39 +35,39 @@ portraitsButton.addEventListener('click', (event) => {
 
 //-------------------------Homepage Listeners-----------------------------
 
-logo.addEventListener('click', (event) => {
+logo.addEventListener('click', () => {
   homeContainer.classList.remove('hidden')
   portfolioContainer.classList.add('hidden')
   picturesPortfolio.classList.add('hidden')
   aboutContainer.classList.add('hidden')
 })
 
-portfolio.addEventListener('click', (event) => {
+portfolio.addEventListener('click', () => {
   homeContainer.classList.add('hidden')
   portfolioContainer.classList.remove('hidden')
   picturesPortfolio.classList.add('hidden')
   aboutContainer.classList.add('hidden')
 })
 
-about.addEventListener('click', (event) => {
+about.addEventListener('click', () => {
   homeContainer.classList.add('hidden')
   portfolioContainer.classList.add('hidden')
   picturesPortfolio.classList.add('hidden')
   aboutContainer.classList.remove('hidden')
 })
 
-contact.addEventListener('click', (event) => {
+contact.addEventListener('click', () => {
   homeContainer.classList.add('hidden')
 })
 
-instagram.addEventListener('click', (event) => {
+instagram.addEventListener('click', () => {
   openInNewTab('https://instagram.com/tylerr_i/')
 })
 
-twitter.addEventListener('click', (event) => {
+twitter.addEventListener('click', () => {
   openInNewTab('https://twitter.com/tytheguye')
 })
 
-flikr.addEventListener('click', (event) => {
+flikr.addEventListener('click', () => {
   openInNewTab('https://www.flickr.com/photos/136198743@N07/')
 })
