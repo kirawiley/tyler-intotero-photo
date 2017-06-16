@@ -16,10 +16,11 @@ body {
   height: 100vh
 }
 
-#header {
+.navbar {
   z-index: 10;
-  height: 80px;
+  height: 10%;
   width: 100%;
+  @extend .no-border;
 }
 
 #logo {
@@ -32,6 +33,21 @@ body {
 
 #nav-container {
   text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-collapse[aria-expanded="true"] {
+    width: 200px;
+    background-color: $transparent-black;
+
+    .divider {
+      display: none;
+    }
+
+    .navigate {
+      font-size: 20px;
+    }
+  }
 }
 
 .navigate {
@@ -54,7 +70,7 @@ body {
   color: $white;
 }
 
-#social-media i:hover {
+#social-media span:hover {
   cursor: pointer;
 }
 

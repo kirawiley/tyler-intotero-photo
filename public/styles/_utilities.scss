@@ -12,3 +12,8 @@
 .border {
   border: 15px $transparent-black solid;
 }
+
+.no-border {
+  border: none;
+  border-radius: 0;
+}
