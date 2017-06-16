@@ -1,0 +1,132 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "_colors";
+@import "_layout";
+@import "_utilities";
+@import "_backgrounds";
+
+body {
+  font-family: "Lato";
+}
+
+.hidden {
+  display: none;
+}
+
+#homepage-container {
+  height: 100vh
+}
+
+#header {
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+}
+
+#logo {
+  width: 325px;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#nav-container {
+  text-align: left;
+}
+
+.navigate {
+  font-weight: 300;
+  color: $white;
+  font-size: 15px;
+}
+
+.divider {
+  color: $black;
+  font-weight: 900;
+}
+
+.navigate:hover {
+  cursor: pointer;
+  color: $scarlet;
+}
+
+#social-media {
+  color: $white;
+}
+
+#social-media i:hover {
+  cursor: pointer;
+}
+
+#portfolio-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#portfolio-container img {
+  @extend .border;
+}
+
+#landscape-selector {
+  width: 450px;
+  z-index: -1;
+}
+
+#landscapes-wrapper {
+  width: 450px;
+  height: 310.69px;
+
+  h3 {
+    @extend .hidden-header;
+  }
+}
+
+#landscapes-wrapper:hover h3 {
+  @extend .show-hover-effect;
+}
+
+#landscapes-wrapper:hover {
+  cursor: pointer;
+  z-index: 100;
+}
+
+#portrait-selector {
+  width: 450px;
+  z-index: -1;
+}
+
+#portraits-wrapper {
+  width: 450px;
+  height: 310px;
+
+  h3 {
+   @extend .hidden-header;
+ }
+}
+
+#portraits-wrapper:hover h3 {
+  @extend .show-hover-effect;
+}
+
+#portraits-wrapper:hover {
+  cursor: pointer;
+  z-index: 100;
+}
+
+.col-xs-4 img {
+  width: 100%;
+}
+
+.col-xs-4 {
+  width: 32%;
+}
+
+#about-container p {
+  color: $black;
+  font-size: 20px;
+}
+
+#tyler-photo {
+  width: 400px;
+  @extend .border;
+}

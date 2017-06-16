@@ -1,0 +1,20 @@
+body {
+  background-color: $white;
+}
+
+#homepage-container {
+  background-image: url("../images/home2.jpg");
+  background-size: cover;
+}
+
+#header {
+  background-color: $transparent-black;
+}
+
+#landscapes-wrapper:hover {
+  background-color: $transparent-white;
+}
+
+#portraits-wrapper:hover {
+  background-color: $transparent-white
+}

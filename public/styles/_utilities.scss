@@ -1,0 +1,14 @@
+.show-hover-effect {
+  visibility: visible;
+  z-index: 1;
+}
+
+.hidden-header {
+  visibility: hidden;
+  font-size: 40px;
+  color: $white;
+}
+
+.border {
+  border: 15px $transparent-black solid;
+}
