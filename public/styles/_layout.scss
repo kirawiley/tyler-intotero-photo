@@ -11,7 +11,7 @@
 #nav-container {
   position: absolute;
   top: 30px;
-  left: 380px;
+  left: 360px;
 }
 
 .divider {
@@ -45,19 +45,6 @@
   }
 }
 
-.button-container {
-  position: absolute;
-  top: 250px;
-
-  #landscapes {
-      left: 180px;
-  }
-
-  #portraits {
-      left: 800px;
-  }
-}
-
 #landscapes-wrapper {
   position: absolute;
   top: 0px;
@@ -69,20 +56,35 @@
   }
 }
 
-#portrait-selector {
-  position: absolute;
-  left: 43%;
-}
-
 #portraits-wrapper {
   position: absolute;
   top: 0px;
-  left: 43%;
 
   h3 {
     position: absolute;
     top: 100px;
     left: 120px;
+  }
+}
+
+#portfolio-container {
+  padding-top: 150px;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#portfolio-container.row {
+  position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  #portraits {
+    margin-top: 400px;
+    margin-bottom: 100px;
   }
 }
 
