@@ -91,18 +91,18 @@
 #show-portfolio {
   position: absolute;
   top: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-.col-xs-4:nth-child(0n+1) {
-  margin-left: 2%;
-}
-
-.col-xs-4 {
+.image-column {
   margin-bottom: 25px;
 }
 
 #about-container .row {
   padding-top: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #info-column {
