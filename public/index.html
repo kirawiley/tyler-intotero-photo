@@ -4,48 +4,60 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="../build/main.css"/>
     <title>Tyler Intotero</title>
   </head>
   <body>
-    <div id="header">
-      <img id="logo" src="images/logo.png" alt="Tyler Intotero Photography"/>
-        <div id="nav-container">
-          <span class="navigate" id="portfolio">PORTFOLIO</span>
-          <span class="divider">/</span>
-          <span class="navigate" id="about">ABOUT</span>
-          <span class="divider">/</span>
-          <span class="navigate" id="contact">CONTACT</span>
-          <span class="divider">/</span>
-          <span class="navigate">SHOP</span>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"><img id="logo" src="images/logo.png" alt="Tyler Intotero Photography"/></a>
         </div>
-        <div id="social-media">
-          <i id="instagram" class="fa fa-2x fa-instagram" aria-hidden="true"></i>
-          <i id="twitter" class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-          <i id="flikr" class="fa fa-2x fa-flickr" aria-hidden="true"></i>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul id="nav-container" class="nav navbar-nav">
+            <li class="navigate" id="portfolio">PORTFOLIO</li>
+            <li class="divider">/</li>
+            <li class="navigate" id="about">ABOUT</li>
+            <li class="divider">/</li>
+            <li class="navigate" id="contact">CONTACT</li>
+            <li class="divider">/</li>
+            <li class="navigate">SHOP</li>
+          </ul>
+          <div id="social-media" class="nav navbar-nav navbar-right">
+            <span><i id="instagram" class="fa fa-2x fa-instagram" aria-hidden="true"></i></span>
+            <span><i id="twitter" class="fa fa-2x fa-twitter" aria-hidden="true"></i></span>
+            <span><i id="flikr" class="fa fa-2x fa-flickr" aria-hidden="true"></i></span>
+          </div>
         </div>
-    </div>
+      </div>
+    </nav>
 
     <div id="homepage-container">
     </div>
 
     <div class="hidden" id="portfolio-container">
-      <div class="button-container" id="landscapes">
-        <img id="landscape-selector" src="images/landscape-button.jpg"/>
-        <div id="landscapes-wrapper">
-          <h3>LANDSCAPES</h3>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div id="landscapes" class="centered">
+            <img id="landscape-selector" src="images/landscape-button.jpg"/>
+            <div id="landscapes-wrapper">
+              <h3>LANDSCAPES</h3>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="button-container" id="portraits">
-        <img id="portrait-selector" src="images/portraits-button.jpg"/>
-        <div id="portraits-wrapper">
-          <h3>PORTRAITS</h3>
+        <div class="col-md-6 col-sm-12">
+          <div id="portraits" class="centered">
+            <img id="portrait-selector" src="images/portraits-button.jpg"/>
+            <div id="portraits-wrapper">
+              <h3>PORTRAITS</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -53,114 +65,114 @@
     <div class="hidden" id="show-portfolio">
       <div class="hidden" id="landscapes-container">
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape1.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape20.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape4.jpg"/>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape5.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape6.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape7.jpg"/>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape8.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape21.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape10.jpg"/>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape11.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape12.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape13.jpg"/>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape22.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape15.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape16.jpg"/>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape2.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape18.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape23.jpg"/>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape24.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape25.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape26.jpg"/>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape14.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape19.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/landscapes-images/landscape9.jpg"/>
           </div>
         </div>
       </div>
       <div class="hidden" id="portraits-container">
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/portraits-images/portraits5.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/portraits-images/portraits2.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/portraits-images/portraits4.jpg"/>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/portraits-images/portraits3.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="portfolio/portraits-images/portraits1.jpg"/>
           </div>
-          <div class="col-xs-4">
+          <div class="col-md-4 col-sm-12 image-column">
             <img src="../images/portraits-button.jpg"/>
           </div>
         </div>
@@ -169,16 +181,23 @@
 
     <div id="about-container" class="hidden">
       <div class="row">
-        <div class="col-xs-6" id="info-column">
-          <p>Tyler is a 23 year old self-taught photographer from Orange County, California.  With his Sony a7000 and tripod, he utilizes long-exposure techniques for his beach and sunset shots.  He also has a strong artistic eye for capturing models and is looking to expand his portraits portfolio.  Soon Tyler will be traveling to Joshua Tree to photograph the Milky Way, a subject that he's been excited about for quite some time. </p>
+        <div class="col-sm-12 col-md-6" id="info-column">
+          <p>Tyler is a 23 year old self-taught photographer from Orange County, California.  With his Sony a6000 and tripod, he utilizes long-exposure techniques for his beach and sunset shots.  He also has a strong artistic eye for capturing models and is looking to expand his portraits portfolio.  Soon Tyler will be traveling to Joshua Tree to photograph the Milky Way, a subject that he's been excited about for quite some time. </p>
           <p>Besides photography, Tyler enjoys hockey.  He is an Anaheim Ducks fan and plays on his own ice hockey team every week.  He's also a frequent online gamer and a dog owner to a Havanese mix named Baxter.</p>
         </div>
-        <div class="col-xs-6" id="photo-column">
+        <div class="col-sm-12 col-md-6">
           <img id="tyler-photo" src="images/tyler-profile.jpg"/>
         </div>
       </div>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
     <script src="main.js"></script>
   </body>
 </html>

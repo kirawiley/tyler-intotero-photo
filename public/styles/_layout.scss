@@ -1,0 +1,136 @@
+.navbar {
+  position: fixed;
+}
+
+#logo {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+#nav-container {
+  position: absolute;
+  top: 30px;
+  left: 360px;
+}
+
+.navbar-header button {
+  margin-top: 23px;
+}
+
+.divider {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .divider {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #nav-container {
+    left: 320px;
+  }
+}
+
+#social-media {
+  margin-top: 25px;
+}
+
+#social-media i {
+  margin-left: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-collapse[aria-expanded="true"] {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+
+    #nav-container {
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+
+    .navigate {
+      margin-left: 20px;
+    }
+  }
+}
+
+#landscapes-wrapper {
+  position: absolute;
+  top: 0px;
+
+  h3 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+  }
+}
+
+#portraits-wrapper {
+  position: absolute;
+  top: 0px;
+
+  h3 {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+  }
+}
+
+#portfolio-container {
+  padding-top: 150px;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#portfolio-container.row {
+  position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  #portraits {
+    margin-top: 400px;
+    margin-bottom: 100px;
+  }
+}
+
+#show-portfolio {
+  position: absolute;
+  top: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.image-column {
+  margin-bottom: 25px;
+}
+
+#about-container .row {
+  padding-top: 130px;
+}
+
+#info-column {
+  padding-left: 10%;
+}
+
+@media only screen and (max-width: 991px) {
+  #info-column {
+    padding-right: 10%;
+    margin-bottom: 50px;
+  }
+}
+
+#tyler-photo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}

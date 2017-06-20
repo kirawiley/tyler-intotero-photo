@@ -6,14 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node .",
-    "watch": "nodemon ."
+    "watch": "nodemon .",
+    "build": "node-sass public/styles/main.scss public/build/main.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
-    "express": "^4.15.2"
+    "bootstrap-sass": "^3.3.7",
+    "express": "^4.15.2",
+    "node-sass": "^4.5.3"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
