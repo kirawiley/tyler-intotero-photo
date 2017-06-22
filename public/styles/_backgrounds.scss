@@ -18,3 +18,28 @@ body {
 #portraits-wrapper:hover {
   background-color: $transparent-white
 }
+
+#contact-container {
+  background-image: url(../images/contact-bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#form-container {
+  input {
+    background-color: $light-transparent;
+  }
+
+  textarea {
+    background-color: $light-transparent;
+  }
+
+  input:focus, textarea:focus {
+    background-color: $white;
+  }
+}
+
+#send-email {
+  background-color: $white !important;
+}
