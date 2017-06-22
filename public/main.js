@@ -8,6 +8,7 @@ const contact = document.getElementById('contact')
 const homeContainer = document.getElementById('homepage-container')
 const portfolioContainer = document.getElementById('portfolio-container')
 const aboutContainer = document.getElementById('about-container')
+const contactContainer = document.getElementById('contact-container')
 const landscapesButton = document.getElementById('landscapes-wrapper')
 const portraitsButton = document.getElementById('portraits-wrapper')
 const picturesPortfolio = document.getElementById('show-portfolio')
@@ -39,6 +40,7 @@ logo.addEventListener('click', () => {
   homeContainer.classList.remove('hidden')
   portfolioContainer.classList.add('hidden')
   picturesPortfolio.classList.add('hidden')
+  contactContainer.classList.add('hidden')
   aboutContainer.classList.add('hidden')
 })
 
@@ -46,6 +48,7 @@ portfolio.addEventListener('click', () => {
   homeContainer.classList.add('hidden')
   portfolioContainer.classList.remove('hidden')
   picturesPortfolio.classList.add('hidden')
+  contactContainer.classList.add('hidden')
   aboutContainer.classList.add('hidden')
 })
 
@@ -53,11 +56,16 @@ about.addEventListener('click', () => {
   homeContainer.classList.add('hidden')
   portfolioContainer.classList.add('hidden')
   picturesPortfolio.classList.add('hidden')
+  contactContainer.classList.add('hidden')
   aboutContainer.classList.remove('hidden')
 })
 
 contact.addEventListener('click', () => {
   homeContainer.classList.add('hidden')
+  portfolioContainer.classList.add('hidden')
+  picturesPortfolio.classList.add('hidden')
+  aboutContainer.classList.add('hidden')
+  contactContainer.classList.remove('hidden')
 })
 
 instagram.addEventListener('click', () => {
