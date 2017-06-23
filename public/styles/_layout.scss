@@ -134,3 +134,22 @@
   margin: 0 auto;
   margin-bottom: 50px;
 }
+
+#form-container {
+  margin: 0 auto;
+
+  input {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  input::placeholder, textarea::placeholder {
+    padding-left: 10px;
+  }
+}
+
+#contact-container {
+  padding-top: 110px;
+}

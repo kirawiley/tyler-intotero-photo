@@ -142,3 +142,57 @@ body {
   width: 400px;
   @extend .border;
 }
+
+#contact-container {
+  height: 100vh;
+}
+
+#form-container {
+  width: 500px;
+  text-align: center;
+}
+
+#form-container {
+  color: $white;
+  font-weight: 300;
+
+  h3 {
+    color: $black;
+    font-weight: 300;
+  }
+
+  input {
+    width: 260px;
+    height: 40px;
+    @extend .inputs;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: $white;
+    font-size: 18px;
+  }
+
+  input[type="text"] {
+    font-size: 18px;
+  }
+
+  textarea {
+    font-size: 18px;
+    width: 400px;
+    @extend .inputs;
+  }
+
+  input:focus, textarea:focus {
+    color: $black;
+  }
+}
+
+#send-email {
+  width: 160px !important;
+  font-size: 18px;
+  color: $black;
+}
+
+#send-email:hover {
+  box-shadow: 0 0 15px $dark-grey;
+}
