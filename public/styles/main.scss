@@ -157,6 +157,7 @@ body {
   font-weight: 300;
 
   h3 {
+    color: $black;
     font-weight: 300;
   }
 
@@ -176,8 +177,8 @@ body {
   }
 
   textarea {
-    width: 320px;
     font-size: 18px;
+    width: 400px;
     @extend .inputs;
   }
 
@@ -187,11 +188,11 @@ body {
 }
 
 #send-email {
-  width: 180px !important;
+  width: 160px !important;
   font-size: 18px;
   color: $black;
 }
 
 #send-email:hover {
-  box-shadow: 0 0 15px grey;
+  box-shadow: 0 0 15px $dark-grey;
 }
