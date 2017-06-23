@@ -15,6 +15,8 @@ const picturesPortfolio = document.getElementById('show-portfolio')
 const landscapesContainer = document.getElementById('landscapes-container')
 const portraitsContainer = document.getElementById('portraits-container')
 const sendButton = document.getElementById('send-email')
+const emailInput = document.getElementById('email')
+const messageInput = document.getElementById('message')
 
 function openInNewTab(url) {
   const tab = window.open(url, '_blank')
@@ -22,8 +24,6 @@ function openInNewTab(url) {
 }
 
 function emailObject() {
-  const emailInput = document.getElementById('email')
-  const messageInput = document.getElementById('message')
   const email = emailInput.value
   const message = messageInput.value
 
@@ -45,7 +45,16 @@ function postEmail(email) {
 
 sendButton.addEventListener('click', () => {
   const email = emailObject()
-  postEmail(email)
+  if (email.email === '' || email.message === '') {
+    alert('Please fill out both fields.')
+  }
+
+  else {
+    postEmail(email)
+    alert('Thank you for your email! It has been sent to Tyler\'s inbox and he will get back to you shortly.')
+    emailInput.value = ''
+    messageInput.value = ''
+  }
 })
 
 landscapesButton.addEventListener('click', () => {
