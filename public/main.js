@@ -14,11 +14,39 @@ const portraitsButton = document.getElementById('portraits-wrapper')
 const picturesPortfolio = document.getElementById('show-portfolio')
 const landscapesContainer = document.getElementById('landscapes-container')
 const portraitsContainer = document.getElementById('portraits-container')
+const sendButton = document.getElementById('send-email')
 
 function openInNewTab(url) {
   const tab = window.open(url, '_blank')
   tab.focus()
 }
+
+function emailObject() {
+  const emailInput = document.getElementById('email')
+  const messageInput = document.getElementById('message')
+  const email = emailInput.value
+  const message = messageInput.value
+
+  return {
+    email: email,
+    message: message
+  }
+}
+
+function postEmail(email) {
+  return fetch('/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(email)
+    })
+}
+
+sendButton.addEventListener('click', () => {
+  const email = emailObject()
+  postEmail(email)
+})
 
 landscapesButton.addEventListener('click', () => {
   portfolioContainer.classList.add('hidden')
