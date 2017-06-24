@@ -1,22 +1,22 @@
-const logo = document.getElementById('logo')
-const instagram = document.getElementById('instagram')
-const twitter = document.getElementById('twitter')
-const flikr = document.getElementById('flikr')
-const portfolio = document.getElementById('portfolio')
-const about = document.getElementById('about')
-const contact = document.getElementById('contact')
-const homeContainer = document.getElementById('homepage-container')
-const portfolioContainer = document.getElementById('portfolio-container')
-const aboutContainer = document.getElementById('about-container')
-const contactContainer = document.getElementById('contact-container')
-const landscapesButton = document.getElementById('landscapes-wrapper')
-const portraitsButton = document.getElementById('portraits-wrapper')
-const picturesPortfolio = document.getElementById('show-portfolio')
-const landscapesContainer = document.getElementById('landscapes-container')
-const portraitsContainer = document.getElementById('portraits-container')
-const sendButton = document.getElementById('send-email')
-const emailInput = document.getElementById('email')
-const messageInput = document.getElementById('message')
+const logo = $('#logo')
+const instagram = $('#instagram')
+const twitter = $('#twitter')
+const flikr = $('#flikr')
+const portfolio = $('#portfolio')
+const about = $('#about')
+const contact = $('#contact')
+const homeContainer = $('#homepage-container')
+const portfolioContainer = $('#portfolio-container')
+const aboutContainer = $('#about-container')
+const contactContainer = $('#contact-container')
+const landscapesButton = $('#landscapes-wrapper')
+const portraitsButton = $('#portraits-wrapper')
+const picturesPortfolio = $('#show-portfolio')
+const landscapesContainer = $('#landscapes-container')
+const portraitsContainer = $('#portraits-container')
+const sendButton = $('#send-email')
+const emailInput = $('#email')
+const messageInput = $('#message')
 
 function openInNewTab(url) {
   const tab = window.open(url, '_blank')
@@ -24,8 +24,8 @@ function openInNewTab(url) {
 }
 
 function emailObject() {
-  const email = emailInput.value
-  const message = messageInput.value
+  const email = emailInput.val()
+  const message = messageInput.val()
 
   return {
     email: email,
@@ -43,7 +43,7 @@ function postEmail(email) {
     })
 }
 
-sendButton.addEventListener('click', () => {
+sendButton.click(() => {
   const email = emailObject()
   if (email.email === '' || email.message === '') {
     alert('Please fill out both fields.')
@@ -52,67 +52,67 @@ sendButton.addEventListener('click', () => {
   else {
     postEmail(email)
     alert('Thank you for your email! It has been sent to Tyler\'s inbox and he will get back to you shortly.')
-    emailInput.value = ''
-    messageInput.value = ''
+    emailInput.val('')
+    messageInput.val('')
   }
 })
 
-landscapesButton.addEventListener('click', () => {
-  portfolioContainer.classList.add('hidden')
-  picturesPortfolio.classList.remove('hidden')
-  portraitsContainer.classList.add('hidden')
-  landscapesContainer.classList.remove('hidden')
+landscapesButton.click(() => {
+  portfolioContainer.addClass('hidden')
+  picturesPortfolio.removeClass('hidden')
+  portraitsContainer.addClass('hidden')
+  landscapesContainer.removeClass('hidden')
 })
 
-portraitsButton.addEventListener('click', () => {
-  portfolioContainer.classList.add('hidden')
-  picturesPortfolio.classList.remove('hidden')
-  landscapesContainer.classList.add('hidden')
-  portraitsContainer.classList.remove('hidden')
+portraitsButton.click(() => {
+  portfolioContainer.addClass('hidden')
+  picturesPortfolio.removeClass('hidden')
+  landscapesContainer.addClass('hidden')
+  portraitsContainer.removeClass('hidden')
 })
 
 //-------------------------Homepage Listeners-----------------------------
 
-logo.addEventListener('click', () => {
-  homeContainer.classList.remove('hidden')
-  portfolioContainer.classList.add('hidden')
-  picturesPortfolio.classList.add('hidden')
-  contactContainer.classList.add('hidden')
-  aboutContainer.classList.add('hidden')
+logo.click(() => {
+  homeContainer.removeClass('hidden')
+  portfolioContainer.addClass('hidden')
+  picturesPortfolio.addClass('hidden')
+  contactContainer.addClass('hidden')
+  aboutContainer.addClass('hidden')
 })
 
-portfolio.addEventListener('click', () => {
-  homeContainer.classList.add('hidden')
-  portfolioContainer.classList.remove('hidden')
-  picturesPortfolio.classList.add('hidden')
-  contactContainer.classList.add('hidden')
-  aboutContainer.classList.add('hidden')
+portfolio.click(() => {
+  homeContainer.addClass('hidden')
+  portfolioContainer.removeClass('hidden')
+  picturesPortfolio.addClass('hidden')
+  contactContainer.addClass('hidden')
+  aboutContainer.addClass('hidden')
 })
 
-about.addEventListener('click', () => {
-  homeContainer.classList.add('hidden')
-  portfolioContainer.classList.add('hidden')
-  picturesPortfolio.classList.add('hidden')
-  contactContainer.classList.add('hidden')
-  aboutContainer.classList.remove('hidden')
+about.click(() => {
+  homeContainer.addClass('hidden')
+  portfolioContainer.addClass('hidden')
+  picturesPortfolio.addClass('hidden')
+  contactContainer.addClass('hidden')
+  aboutContainer.removeClass('hidden')
 })
 
-contact.addEventListener('click', () => {
-  homeContainer.classList.add('hidden')
-  portfolioContainer.classList.add('hidden')
-  picturesPortfolio.classList.add('hidden')
-  aboutContainer.classList.add('hidden')
-  contactContainer.classList.remove('hidden')
+contact.click(() => {
+  homeContainer.addClass('hidden')
+  portfolioContainer.addClass('hidden')
+  picturesPortfolio.addClass('hidden')
+  aboutContainer.addClass('hidden')
+  contactContainer.removeClass('hidden')
 })
 
-instagram.addEventListener('click', () => {
+instagram.click(() => {
   openInNewTab('https://instagram.com/tylerr_i/')
 })
 
-twitter.addEventListener('click', () => {
+twitter.click(() => {
   openInNewTab('https://twitter.com/tytheguye')
 })
 
-flikr.addEventListener('click', () => {
+flikr.click(() => {
   openInNewTab('https://www.flickr.com/photos/136198743@N07/')
 })
